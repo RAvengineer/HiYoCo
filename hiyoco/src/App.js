@@ -17,7 +17,7 @@ const theme = createMuiTheme({
   palette: {
     type: 'dark',
     primary:{
-      main:'#303030',
+      main:'#000000',
     },
     secondary:{
       main:'#424242',
@@ -46,7 +46,7 @@ function App() {
     <Router>
       <ThemeProvider theme={theme}>
       <div className={classes.root}>
-          <AppBar  position="static">
+          <AppBar  position="static" style={{backgroundColor:"black"}}>
             <Toolbar>
               <Typography variant="h4" className={classes.title}>
                 <NavLink to="/" className={classes.link} end activeStyle={{color: '#1ca9c9'}}>
