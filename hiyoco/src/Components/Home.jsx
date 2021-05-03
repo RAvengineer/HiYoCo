@@ -30,6 +30,7 @@ const useStyles = makeStyles((theme) => ({
     },
     app:{
       backgroundColor:'#1ca9c9',
+      overflow:"hidden"
     },
     heading:{
         color:"black",
@@ -53,18 +54,14 @@ export default function Home()
             const sourceCanvas = canvasRef.current;
             const context = sourceCanvas.getContext("2d");
             if(selectedFile){
-                let img = new Image();
-                img.src=imageURL; 
-                context.drawImage(document.getElementById("lock"),0,0,250,250);
+                context.drawImage(document.getElementById("image"),0,0,250,250);
             }
        }
        if(resultRef.current){
             const sourceCanvas = resultRef.current;
             const context = sourceCanvas.getContext("2d");
             if(selectedFile){
-                let img = new Image();
-                img.src=imageURL; 
-                context.drawImage(document.getElementById("lock"),0,0,250,250);
+                context.drawImage(document.getElementById("image"),0,0,250,250);
             }
    }
     })
@@ -87,8 +84,6 @@ export default function Home()
 
     return (
         <div className={classes.app} height="100vh">
-            <div className={classes.image} style={{height:'25vh'}}>
-            </div>
             <div className={classes.heroContent}>
                 <Container maxWidth="xl"  style={{ backgroundColor: '#1ca9c9', width:'100%', padding:'2rem' }}>
                     <Typography component="h1" variant="h2" align="center" color="textPrimary" className={classes.heading} gutterBottom>
@@ -100,7 +95,7 @@ export default function Home()
                 </Container>
             </div>
             <div className={classes.heroContent} style={{backgroundColor:"#1ca9c9"}}>
-                <img src={imageURL} alt="lock" id="lock" style={{display:"none"}}/>
+                <img src={imageURL} alt="imageURL" id="image" style={{display:"none"}}/>
                 <Grid container spacing={2} justify="center">
                     <Grid item sm={3} style={{ height:"35vh", padding:"1rem", marginTop:"1.5rem"}}>
                         <form noValidate autoComplete="off">
@@ -112,15 +107,15 @@ export default function Home()
                             </Box>
                         </form>         
                     </Grid>
-                    <Grid item xs={4} sm={3} style={{backgroundColor:"white",marginLeft:"1rem", height:"35vh"}}>
+                    <Grid item xs={4} sm={3} style={{backgroundColor:"#202020",marginLeft:"1rem", height:"35vh"}}>
                         <canvas ref={canvasRef} width="500" height="750"/>
                     </Grid>
-                    <Grid item xs={4} sm={3}  style={{backgroundColor:"white", marginLeft:"1rem", height:"35vh"}}>
+                    <Grid item xs={4} sm={3}  style={{backgroundColor:"#202020", marginLeft:"1rem", height:"35vh"}}>
                         <canvas ref={resultRef} width="500" height="750"/>
                     </Grid>
                 </Grid>   
             </div>
-            <div style={{height:'5.2vh', backgroundColor:'#1ca9c9'}}></div>
+            <div style={{height:'32vh', backgroundColor:'#1ca9c9'}}></div>
         </div>
     );
 }
