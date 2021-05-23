@@ -7,6 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import TextField from '@material-ui/core/TextField';
 import Box from '@material-ui/core/Box';
 import Lock from "../../src/lock.jpg";
+import { loadImage } from "../Utils/steganography";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -46,35 +47,6 @@ export default function Home()
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const classes = useStyles();
-    const canvasRef = useRef(null); 
-    const resultRef = useRef(null);
-
-   useEffect(()=>{
-       if(canvasRef.current){
-            const sourceCanvas = canvasRef.current;
-            const context = sourceCanvas.getContext("2d");
-            if(selectedFile){
-                context.drawImage(document.getElementById("image"),0,0,250,250);
-            }
-       }
-       if(resultRef.current){
-            const sourceCanvas = resultRef.current;
-            const context = sourceCanvas.getContext("2d");
-            if(selectedFile){
-                context.drawImage(document.getElementById("image"),0,0,250,250);
-            }
-   }
-    })
- 
-    function fileChangeHandler(e) {
-        let reader = new FileReader();
-        let file = e.target.files[0];
-        reader.onloadend = function () {
-        setSelectedFile(file);
-        setImageURL(reader.result);
-        };
-        reader.readAsDataURL(file);
-    }
 
     function submitHandler(e)
     {
@@ -97,25 +69,26 @@ export default function Home()
             <div className={classes.heroContent} style={{backgroundColor:"#1ca9c9"}}>
                 <img src={imageURL} alt="imageURL" id="image" style={{display:"none"}}/>
                 <Grid container spacing={2} justify="center">
-                    <Grid item sm={3} style={{ height:"35vh", padding:"1rem", marginTop:"1.5rem"}}>
+                    <Grid item sm={10} md={8} lg={3} style={{ height:"35vh", padding:"1rem", marginTop:"1.5rem"}}>
                         <form noValidate autoComplete="off">
                             <Box display="flex" flexDirection="column">
                                 <TextField id="name" label="Name" value={name} onChange={e => setName(e.target.value)} required style={{marginBottom:"0.35rem"}} />
                                 <TextField id="email" label="Email" value={email} onChange={e => setEmail(e.target.value)} required  style={{marginBottom:"0.75rem"}} />
-                                <input className={classes.input} type="file" onChange={fileChangeHandler} accept="image/jpeg"  style={{marginBottom:"0.75rem"}} />
-                                <Button variant="contained"color="primary" type="submit" onClick={submitHandler}>Submit</Button>
+                                {/* <input className={classes.input} type="file" onChange={fileChangeHandler} accept="image/jpeg"  style={{marginBottom:"0.75rem"}} /> */}
+                                <Button variant="contained"color="primary" type="submit" onClick={loadImage}>Submit</Button>
                             </Box>
                         </form>         
                     </Grid>
-                    <Grid item xs={4} sm={3} style={{backgroundColor:"#202020",marginLeft:"1rem", height:"35vh"}}>
-                        <canvas ref={canvasRef} width="500" height="750"/>
+                    <Grid item xs={10} sm={10} md={5} lg={4} style={{backgroundColor:"#202020",marginLeft:"1rem", height:"35vh"}}>
+                        <img id="input-image" alt="" />
                     </Grid>
-                    <Grid item xs={4} sm={3}  style={{backgroundColor:"#202020", marginLeft:"1rem", height:"35vh"}}>
-                        <canvas ref={resultRef} width="500" height="750"/>
+                    <Grid item xs={10} sm={10} md={5} lg={4} style={{backgroundColor:"#202020", marginLeft:"1rem", height:"35vh"}}>
+                        {/* <canvas ref={resultRef} width="500" height="750"/> */}
                     </Grid>
                 </Grid>   
             </div>
             <div style={{height:'32vh', backgroundColor:'#1ca9c9'}}></div>
+            <canvas id="canvas"></canvas>
         </div>
     );
 }
