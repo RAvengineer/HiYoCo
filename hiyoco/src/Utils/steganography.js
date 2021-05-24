@@ -1,3 +1,5 @@
+import { clearAuthorDetails, retrieveAuthorDetails } from "./helper";
+
 let isImageUpload = false;
 
 // Loads input image to the Canvas for encoding or decoding
@@ -33,12 +35,12 @@ function loadImage(e) {
 // Encodes the secret message on the original and displays the encoded image
 function encode() {
     if (isImageUpload) {      //Checks if an image is uploaded  
-        let message = document.getElementById('secret').value;
+        let message = retrieveAuthorDetails();
         if (message.length > 1000) {
             alert("The message is too big to encode");
         } else {
             document.getElementById('encoded-image').style.display = 'block';
-            document.getElementById('secret').value = '';
+            clearAuthorDetails();
             let output = document.getElementById('encoded-image');
             let canvas = document.getElementById('canvas');
             let ctx = canvas.getContext('2d');
