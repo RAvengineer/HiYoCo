@@ -13,6 +13,6 @@ updates:
 
   # Maintain dependencies for npm
   - package-ecosystem: "npm"
-    directory: "/"
+    directory: "./hiyoco/"
     schedule:
       interval: "weekly"
