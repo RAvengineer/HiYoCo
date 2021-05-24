@@ -20,9 +20,14 @@ function loadImage(e) {
         } else {
             document.getElementById('upload-photo').value = '';
             alert("Please upload an image!");
+            return;
         }
     };
-    reader.readAsDataURL(e.target.files[0]);
+    try {
+        reader.readAsDataURL(e.target.files[0]);
+    } catch (error) {
+        alert("No image selected!");
+    }
 };
 
 // Encodes the secret message on the original and displays the encoded image
