@@ -1,7 +1,18 @@
-import { Grid, Box, TextField, Button } from "@material-ui/core";
+import { Grid, Box, TextField, Button, makeStyles } from "@material-ui/core";
 import { useState } from "react";
 
+const useStyles = makeStyles((theme) => ({
+    imageBox: {
+        backgroundColor: "#202020", 
+        marginLeft: "1rem", 
+        height: "35vh", 
+        display: "flex"
+    }
+}));
+
 export default function EncodeGrid() {
+
+    const classes = useStyles();
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -23,10 +34,10 @@ export default function EncodeGrid() {
                     </Box>
                 </form>
             </Grid>
-            <Grid item xs={10} sm={10} md={5} lg={4} style={{ backgroundColor: "#202020", marginLeft: "1rem", height: "35vh" }}>
-                <img id="input-image" alt="" style={{ height: "33vh", margin: "auto" }}/>
+            <Grid item xs={10} sm={10} md={5} lg={4} justify='center' className={classes.imageBox}>
+                <img id="input-image" alt="" />
             </Grid>
-            <Grid item zeroMinWidth xs={10} sm={10} md={5} lg={4} style={{ backgroundColor: "#202020", marginLeft: "1rem", height: "35vh" }}>
+            <Grid item xs={10} sm={10} md={5} lg={4} justify='center' className={classes.imageBox}>
                 <img id="encoded-image" alt=""></img>
             </Grid>
         </Grid>
