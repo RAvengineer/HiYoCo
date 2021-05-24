@@ -7,6 +7,7 @@ import Lock from "../../src/lock.jpg";
 import { decode, encode } from "../Utils/steganography";
 import EncodeGrid from "./EncodeGrid";
 import UploadButton from "./UploadButton";
+import DecodeGrid from "./DecodeGrid";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -76,6 +77,7 @@ export default function Home() {
                 {option === 'home' && <Button style={{ margin: '1rem' }} name='decode' onClick={handleClick} variant="contained">Decode</Button>}
                 {option !== 'home' && <UploadButton />}
                 {option === 'encode' && <EncodeGrid />}
+                {option === 'decode' && <DecodeGrid />}
                 {option === 'encode' && <Button style={{ margin: '1rem' }} onClick={encode} variant="contained">Encode</Button>}
                 {option === 'decode' && <Button style={{ margin: '1rem' }} onClick={decode} variant="contained">Decode</Button>}
                 {option !== 'home' && <Button style={{ margin: '1rem' }} name='home' onClick={handleClick} variant="contained">Return</Button>}

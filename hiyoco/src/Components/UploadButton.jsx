@@ -13,9 +13,7 @@ export default function UploadButton() {
                 onChange={loadImage}
             />
             <div>
-                <Button style={{ margin: '1rem' }} variant="contained" component="span">
-                    Upload Image
-        </Button>
+                <Button style={{ margin: '1rem' }} variant="contained" component="span">Upload Image</Button>
             </div>
         </label>
     );
