@@ -3,10 +3,11 @@ import { useState } from "react";
 
 const useStyles = makeStyles((theme) => ({
     imageBox: {
-        backgroundColor: "#202020", 
-        marginLeft: "1rem", 
-        height: "35vh", 
-        display: "flex"
+        backgroundColor: "#202020",
+        marginLeft: "1rem",
+        height: "35vh",
+        display: "flex",
+        justifyContent: "center"
     }
 }));
 
@@ -34,10 +35,10 @@ export default function EncodeGrid() {
                     </Box>
                 </form>
             </Grid>
-            <Grid item xs={10} sm={10} md={5} lg={4} justify='center' className={classes.imageBox}>
+            <Grid item xs={10} sm={10} md={5} lg={4} className={classes.imageBox}>
                 <img id="input-image" alt="" />
             </Grid>
-            <Grid item xs={10} sm={10} md={5} lg={4} justify='center' className={classes.imageBox}>
+            <Grid item xs={10} sm={10} md={5} lg={4} className={classes.imageBox}>
                 <img id="encoded-image" alt=""></img>
             </Grid>
         </Grid>
