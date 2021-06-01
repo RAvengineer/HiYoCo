@@ -3,7 +3,7 @@ import { Grid, Box, TextField, makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
     imageBox: {
         backgroundColor: "#202020",
-        marginLeft: "1rem",
+        margin: "0.5vh",
         height: "35vh",
         display: "flex",
         justifyContent: "center"

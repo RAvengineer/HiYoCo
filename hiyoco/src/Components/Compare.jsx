@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import Lock from "../../src/lock.jpg";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -19,8 +18,12 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: theme.palette.background.paper,
       padding: '0',
     },
-    image:{
-      backgroundImage:`url(${Lock})`,
+    imageBox: {
+        backgroundColor: "#202020",
+        margin: "0.5vh",
+        height: "35vh",
+        display: "flex",
+        justifyContent: "center"
     },
     heroButtons: {
       marginTop: theme.spacing(4),
@@ -93,17 +96,17 @@ export default function Compare()
             </div>
             <div className={classes.heroContent} style={{backgroundColor:"#1ca9c9"}}>
                 <Grid container spacing={2} justify="center">
-                    <Grid item xs={4} sm={3} style={{backgroundColor:"#202020",marginLeft:"1rem", height:"40vh"}}>
+                    <Grid item xs={10} sm={10} md={5} lg={3} className={classes.imageBox}>
                         <input type="file" accpet="image/jpeg" onChange={fileChangeHandler} id="file1"/>
                         <img id="image1" src={image1URL} alt="image1" style={{display:"none"}}/>
                         <canvas ref={image1Ref} width="500" height="750"/>
                     </Grid>
-                    <Grid item xs={4} sm={3}  style={{backgroundColor:"#202020", marginLeft:"1rem", height:"40vh"}}>
+                    <Grid item xs={10} sm={10} md={5} lg={3} className={classes.imageBox}>
                         <input type="file" accpet="image/jpeg" onChange={fileChangeHandler} id="file2"/>
                         <img id="image2" src={image2URL} alt="image2" style={{display:"none"}}/>
                         <canvas ref={image2Ref}  width="500" height="750"/>
                     </Grid>
-                    <Grid item sm={3} style={{backgroundColor:"#202020", height:"40vh", marginLeft:"1rem"}}>     
+                    <Grid item xs={10} sm={10} md={5} lg={3} className={classes.imageBox}>     
                     </Grid>
                 </Grid>   
             </div>
