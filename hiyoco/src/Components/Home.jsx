@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Container from '@material-ui/core/Container';
 import Lock from "../../src/lock.jpg";
-import { decode, encode } from "../Utils/steganography";
+import { decode, encode, loadImage } from "../Utils/steganography";
 import EncodeGrid from "./EncodeGrid";
 import UploadButton from "./UploadButton";
 import DecodeGrid from "./DecodeGrid";
@@ -75,7 +75,7 @@ export default function Home() {
             <div className={classes.heroContent} style={{ backgroundColor: "#1ca9c9" }} align="center">
                 {option === 'home' && <Button style={{ margin: '1rem' }} name='encode' onClick={handleClick} variant="contained">Encode</Button>}
                 {option === 'home' && <Button style={{ margin: '1rem' }} name='decode' onClick={handleClick} variant="contained">Decode</Button>}
-                {option !== 'home' && <UploadButton />}
+                {option !== 'home' && <UploadButton id="upload-photo" onChange={loadImage} />}
                 {option === 'encode' && <EncodeGrid />}
                 {option === 'decode' && <DecodeGrid />}
                 {option === 'encode' && <Button style={{ margin: '1rem' }} onClick={encode} variant="contained">Encode</Button>}
