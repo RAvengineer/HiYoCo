@@ -1,14 +1,13 @@
 import React from 'react';
 import { Button } from '@material-ui/core';
-import { loadImage } from '../Utils/steganography';
 
 export default function UploadButton(props) {
     return (
-        <label htmlFor="upload-photo">
+        <label htmlFor={props.id}>
             <input
                 style={{ display: 'none' }}
                 id={props.id}
-                name="upload-photo"
+                name={props.id}
                 type="file"
                 onChange={props.onChange}
             />
