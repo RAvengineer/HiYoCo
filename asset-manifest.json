@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/HiYoCo/static/css/main.062a8888.chunk.css",
+    "main.js": "/HiYoCo/static/js/main.f0caf7a3.chunk.js",
+    "main.js.map": "/HiYoCo/static/js/main.f0caf7a3.chunk.js.map",
+    "runtime-main.js": "/HiYoCo/static/js/runtime-main.e6fc5b2a.js",
+    "runtime-main.js.map": "/HiYoCo/static/js/runtime-main.e6fc5b2a.js.map",
+    "static/js/2.eaca2fd4.chunk.js": "/HiYoCo/static/js/2.eaca2fd4.chunk.js",
+    "static/js/2.eaca2fd4.chunk.js.map": "/HiYoCo/static/js/2.eaca2fd4.chunk.js.map",
+    "index.html": "/HiYoCo/index.html",
+    "static/css/main.062a8888.chunk.css.map": "/HiYoCo/static/css/main.062a8888.chunk.css.map",
+    "static/js/2.eaca2fd4.chunk.js.LICENSE.txt": "/HiYoCo/static/js/2.eaca2fd4.chunk.js.LICENSE.txt",
+    "static/media/lock.29c38a4a.jpg": "/HiYoCo/static/media/lock.29c38a4a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e6fc5b2a.js",
+    "static/js/2.eaca2fd4.chunk.js",
+    "static/css/main.062a8888.chunk.css",
+    "static/js/main.f0caf7a3.chunk.js"
+  ]
+}
