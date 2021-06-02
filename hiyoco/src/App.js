@@ -47,16 +47,16 @@ function App() {
           <AppBar  position="static" style={{backgroundColor:"black"}}>
             <Toolbar>
               <Typography variant="h4" className={classes.title}>
-                <NavLink to="/" className={classes.link} end activeStyle={{color: '#1ca9c9'}}>
+                <NavLink to="/HiYoCo" className={classes.link} end activeStyle={{color: '#1ca9c9'}}>
                   HiYoCo
                 </NavLink>
               </Typography>
             <List component="nav">
               <ListItem button>
-                <NavLink to="/compare" className={classes.link} activeStyle={{color: '#1ca9c9'}}>
+                <NavLink to="/HiYoCo/compare" className={classes.link} activeStyle={{color: '#1ca9c9'}}>
                   Compare 
                 </NavLink>
-                <NavLink to="/info" className={classes.link} activeStyle={{color: '#1ca9c9'}} >
+                <NavLink to="/HiYoCo/info" className={classes.link} activeStyle={{color: '#1ca9c9'}} >
                   Info 
                 </NavLink>
               </ListItem>
@@ -66,9 +66,9 @@ function App() {
         </div>
         <div>
           <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/info" element={<Info />}/>
-            <Route path="/compare" element={<Compare />}/>
+            <Route path="/HiYoCo" element={<Home />}/>
+            <Route path="/HiYoCo/info" element={<Info />}/>
+            <Route path="/HiYoCo/compare" element={<Compare />}/>
           </Routes>
         </div>
       </ThemeProvider>
