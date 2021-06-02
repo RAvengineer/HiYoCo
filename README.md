@@ -9,6 +9,8 @@ Hide Your Copyright. A Steganography-based method of curbing image plagiarism/pi
     - [EditorConfig](https://editorconfig.org/)
     - [Cannot read property 'string' of undefined | React.PropTypes - StackOverflow](https://stackoverflow.com/a/44573437)
     - [prop-types - npm](https://www.npmjs.com/package/prop-types)
+    - [react-compare-image - npm](https://www.npmjs.com/package/react-compare-image)
+    - [react-compare-image testing - StoryBook](https://react-compare-image.yuuniworks.com/?path=/story/images-with-different-aspect-ratios--same-width-comparison)
 - Material UI
     - [TextField API - Material UI](https://material-ui.com/api/text-field/)
     - [`input` types | Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types)
