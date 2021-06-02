@@ -14,8 +14,10 @@ Hide Your Copyright. A Steganography-based method of curbing image plagiarism/pi
 - Material UI
     - [TextField API - Material UI](https://material-ui.com/api/text-field/)
     - [`input` types | Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#Form_%3Cinput%3E_types)
-- Misc:
+- Deployment
+    - [How to deploy your React App to GitHub Pages - Medium](https://medium.com/@anna.tech/how-to-deploy-your-react-app-to-github-pages-ddab42743367)
     - [GitHub CI/CD Guide for React JS - Dev.to](https://dev.to/dyarleniber/setting-up-a-ci-cd-workflow-on-github-actions-for-a-react-app-with-github-pages-and-codecov-4hnp)
+- Misc
     - [Running actions in another directory - StackOverflow](https://stackoverflow.com/a/58142276)
     - [The Web Robots Page - robotstxt.org](https://www.robotstxt.org/robotstxt.html)
     - [Git HowTo: revert a commit already pushed to a remote repository - GitHub](https://gist.github.com/gunjanpatel/18f9e4d1eb609597c50c2118e416e6a6)
