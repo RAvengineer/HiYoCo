@@ -1,6 +1,8 @@
 # HiYoCo
 Hide Your Copyright. A Steganography-based method of curbing image plagiarism/piracy.
 
+![](https://img.shields.io/github/workflow/status/ravengineer/hiyoco/React%20JS%20CI/main)  ![](https://img.shields.io/tokei/lines/github/ravengineer/hiyoco)   ![](https://img.shields.io/github/deployments/ravengineer/hiyoco/github-pages)  ![](https://img.shields.io/website?url=https%3A%2F%2Fravengineer.github.io%2FHiYoCo)    ![](https://img.shields.io/github/license/ravengineer/hiyoco)
+
 **Inspiration:** https://github.com/FOSS-Cell-GECPKD/image-stego
 
 
@@ -21,3 +23,4 @@ Hide Your Copyright. A Steganography-based method of curbing image plagiarism/pi
     - [Running actions in another directory - StackOverflow](https://stackoverflow.com/a/58142276)
     - [The Web Robots Page - robotstxt.org](https://www.robotstxt.org/robotstxt.html)
     - [Git HowTo: revert a commit already pushed to a remote repository - GitHub](https://gist.github.com/gunjanpatel/18f9e4d1eb609597c50c2118e416e6a6)
+    - [Badges - Shields.io](https://shields.io/)
