@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/HiYoCo/static/css/main.062a8888.chunk.css",
-    "main.js": "/HiYoCo/static/js/main.cedef4f3.chunk.js",
-    "main.js.map": "/HiYoCo/static/js/main.cedef4f3.chunk.js.map",
+    "main.js": "/HiYoCo/static/js/main.9fa3e7ed.chunk.js",
+    "main.js.map": "/HiYoCo/static/js/main.9fa3e7ed.chunk.js.map",
     "runtime-main.js": "/HiYoCo/static/js/runtime-main.e6fc5b2a.js",
     "runtime-main.js.map": "/HiYoCo/static/js/runtime-main.e6fc5b2a.js.map",
-    "static/js/2.eec54b05.chunk.js": "/HiYoCo/static/js/2.eec54b05.chunk.js",
-    "static/js/2.eec54b05.chunk.js.map": "/HiYoCo/static/js/2.eec54b05.chunk.js.map",
+    "static/js/2.8154b429.chunk.js": "/HiYoCo/static/js/2.8154b429.chunk.js",
+    "static/js/2.8154b429.chunk.js.map": "/HiYoCo/static/js/2.8154b429.chunk.js.map",
     "index.html": "/HiYoCo/index.html",
     "static/css/main.062a8888.chunk.css.map": "/HiYoCo/static/css/main.062a8888.chunk.css.map",
-    "static/js/2.eec54b05.chunk.js.LICENSE.txt": "/HiYoCo/static/js/2.eec54b05.chunk.js.LICENSE.txt",
+    "static/js/2.8154b429.chunk.js.LICENSE.txt": "/HiYoCo/static/js/2.8154b429.chunk.js.LICENSE.txt",
     "static/media/lock.29c38a4a.jpg": "/HiYoCo/static/media/lock.29c38a4a.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e6fc5b2a.js",
-    "static/js/2.eec54b05.chunk.js",
+    "static/js/2.8154b429.chunk.js",
     "static/css/main.062a8888.chunk.css",
-    "static/js/main.cedef4f3.chunk.js"
+    "static/js/main.9fa3e7ed.chunk.js"
   ]
 }
